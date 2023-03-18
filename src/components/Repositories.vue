@@ -9,7 +9,8 @@
               <h3 class="repos-title">{{ repo.name }}</h3>
             </div>
             <div class="link-body">
-              <p>{{ repo.description }}</p>
+              <!-- <p>{{ repo.description }}</p> -->
+                <p>{{ repo.id }}</p>
               <a :href="repo.html_url" class="btn btn-primary" target="_blank">View on Github</a>
             </div>
           </div>
@@ -65,13 +66,19 @@
     max-height: 75vh;
     justify-content: center;
     margin: 7 20px;
+    /* border:1px solid red */
     }
 
  .check {
     display: flex;
-    flex-direction: column;
-    width: 210px;
-    height: 250px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: column; */
+    width: 300px;
+    /* height: 250px; */
+    border:1px solid red;
 
     text-align: center;
     background: rgba(34, 37, 35, 0.7);
@@ -79,27 +86,27 @@
     padding: 20px;
 }
 
-    .p-t-md {
+    /* .p-t-md {
         padding-top: 20px;
     }
 
     .m-t-md {
         margin-top: 0px;
-    }
+    } */
 
-    .text-center {
-        text-align: center;
-    }
-
-
-    .panel-default > .panel-heading {
-        color: #fafafa;
+    
+    /* .panel-default > .panel-heading { */
+        /* color: #fafafa;
         background-color: #bdb0b0;
         border-color: #ddd;
-        font-weight: bolder;
-    }
+        font-weight: bolder; */
+        /* border: 1px solid red; */
+
+    /* } */
 
     .panel {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 20px;
     }
 
@@ -113,6 +120,7 @@
         display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 
 
     }
@@ -121,18 +129,17 @@
         padding: 15px;
         font-size: 16px;
         font-weight: 600;
-        display: flex;
-    align-items: center;
-    justify-content: center;
+    
     }
 
     .link-body p {
-        margin-bottom: 0;
+        /* margin-bottom: 0;
         font-size: 16px;
         font-weight: 600;
         display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    margin-bottom: 16px;
     }
 
     .btn {
@@ -140,6 +147,7 @@
         font-size: 14px;
         font-weight: 600;
         border-radius: 0;
+        
 }
 
     .btn-primary {
@@ -149,6 +157,7 @@
     padding: 10px;
     border-radius: 25px;
     cursor: pointer;
+    margin-top: 20px;
 
     }
 
