@@ -1,0 +1,72 @@
+/* styles for RepoList.vue */
+.repo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repo-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.repo-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.repo-card p {
+  margin: 10px 0;
+}
+
+/* styles for RepoDetails.vue */
+.repo-details {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.repo-details h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.repo-details p {
+  margin: 10px 0;
+}
+
+/* styles for pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.page-item {
+  margin: 0 10px;
+}
+
+.page-item a {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-item.active a {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
